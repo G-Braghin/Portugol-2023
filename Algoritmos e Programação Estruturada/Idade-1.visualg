@@ -1,0 +1,13 @@
+//Funcao: informar se o usuario e menor ou maior de idade
+algoritmo "Idade"
+var
+  idade: caractere
+inicio
+  escreval("Informe a sua Idade ")
+  leia(idade)
+  se idade >= 18 entao 
+      escreva("Maior de idade")
+  senao
+      escreva("Menor de idade")
+  fimse
+fimalgoritmo

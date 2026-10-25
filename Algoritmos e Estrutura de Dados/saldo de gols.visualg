@@ -1,0 +1,28 @@
+// Função : criar um algoritmo que registre o resultado de uma partida de futebol
+// entre o time A e o time B, e de acordo com o resultado, exiba diferentes
+// mensagens de notificação. Sendo,diferença de gols 0, será empate, até 3,
+// partida normal, 4 a 7, goleada, fora dessas margens, a mensagem será de
+// erro com mensagem de orientação.
+algoritmo "Gols"
+
+var
+  golsA, golsB, dif: inteiro
+
+inicio
+  escreval("Informe a quantidade de gols do time A: ")
+  leia(golsA)
+  escreval("Informe a quantidade de gols do time B: ")
+  leia(golsB)
+  dif <- abs(golsA - golsB)
+  escolha dif
+    caso 0
+      escreval("Empate!")
+    caso 1, 2, 3
+      escreval("Partida Normal.")
+    caso 4, 5, 6, 7
+      escreval("Goleada!")
+    outrocaso
+      escreval("Erro: Valor fora das margens permitidas.")
+      escreval("Verifique se os gols digitados estão corretos.")
+  fimescolha
+fimalgoritmo

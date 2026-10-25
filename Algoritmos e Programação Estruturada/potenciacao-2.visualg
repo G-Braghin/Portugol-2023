@@ -1,0 +1,17 @@
+//Função: Fazer potenciação 
+algoritmo "Potenciação"
+var
+  base, expoente, result, count: inteiro
+inicio
+  escreval ("Qual é a base?")
+  leia(base)
+  escreval("Qual é o expoente?")
+  leia(expoente)
+  result <- 1
+  count <- 0
+  enquanto count < expoente faca
+      result <- base * result
+      count <- count + 1
+  fimenquanto
+  escreval(result)
+fimalgoritmo
